@@ -32,7 +32,6 @@ body {
 
 main {
     display: flex;
-    
     justify-content: center;
     align-items: center; 
     background: #edf2f8;
@@ -120,10 +119,6 @@ main {
 
 .card5 .picture {
     border: 2px solid var(--mVioletT);
-}
-
-footer{
-    
 }
 
 .attribution {
