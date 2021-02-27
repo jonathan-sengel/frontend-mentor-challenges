@@ -138,6 +138,9 @@ footer{
 }
 
 @media only screen and (max-width: 1140px){
+    .attribution{
+        background: var(--lGrayBlue);
+    }
     .grid {
         grid-template-columns: repeat(3, 257px);
         grid-template-rows: 17.625rem 16.75rem auto;
@@ -157,9 +160,7 @@ footer{
     }
 }
 @media only screen and (max-width: 570px){
-    .attribution{
-        background: var(--lGrayBlue);
-    }
+    
     .grid {
         grid-template-columns: minmax(257px, 375px);
         grid-template-areas: "card1" "card2" "card4" "card5" "card3";
