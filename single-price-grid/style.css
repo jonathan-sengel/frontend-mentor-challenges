@@ -20,8 +20,8 @@ html {
 }
 
 body {
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -123,12 +123,10 @@ main {
 }
 
 .attribution {
-    width: 144rem;
-    padding: 2rem;
+    width: 100%;
     font-size: 1.3rem;
     text-align: center;
     color: var(--grayish-blue);
-
 }
 
 .attribution a {
@@ -137,7 +135,6 @@ main {
 .pd-4 {
     padding: 3.5rem
 }
-
 @media only screen and (max-width:650px){
     main{
         height: auto;
@@ -151,6 +148,6 @@ main {
     }
     .attribution {
         background: #EDF2F8;
-    }
+        padding:20px;
 
 }
