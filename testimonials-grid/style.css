@@ -1,0 +1,130 @@
+:root {
+    --mViolet: hsl(263, 55%, 52%);
+    --mVioletT: hsl(263, 50%, 63%);
+    --vDarkGray: hsl(217, 19%, 35%);
+    --vDarkBlack: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --lGray: hsl(0, 0%, 81%);
+    --lGrayBlue: hsl(210, 46%, 95%);
+}
+
+.gray {
+    color: var(--vDarkGray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: .4px;
+    line-height: 1.1rem;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #edf2f8;
+    width: 90rem;
+    height: 900px;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 257px);
+    grid-template-rows: 17.625rem 16.75rem;
+    grid-template-areas: "card1 card1 card2 card3" "card4 card5 card5 card3"
+    
+}
+
+.testimonial-card {
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.person-info img {
+    width: 32px;
+    border-radius: 100%;
+    margin-right: .75rem;
+}
+
+.person-info .fname {
+    font-size: 13px;
+}
+.person-info .lastname{
+    opacity: .50;
+}
+
+.testimonial-info h2 {
+    padding-bottom: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.testimonial-info h4 {
+    opacity: .7;
+}
+
+.card1 {
+    grid-area: card1;
+    background: url(images/bg-pattern-quotation.svg) no-repeat right 20% top var(--mViolet) ;
+}
+
+.card1 .picture {
+    border: 2px solid var(--mVioletT);
+}
+
+.card2 {
+    grid-area: card2;
+    background: var(--vDarkGray);
+}
+
+.card2 .picture {
+    border: 2px solid var(--lGrayBlue);
+}
+
+.card3 {
+    grid-area: card3;
+    background: var(--white);
+}
+
+.card4 {
+    grid-area: card4;
+    background: var(--white);
+}
+
+.card5 {
+    grid-area: card5;
+    background: var(--vDarkBlack);
+}
+
+.card5 .picture {
+    border: 2px solid var(--mVioletT);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
